@@ -28,17 +28,22 @@
 	}
 
 	.menu__body {
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(0, 0, 0, 0.95);
 	}
 
+	.menu__body._active::before {
+		background-color: #181818;
+	}
+
+
 }
 
 
-.header__contact {
+.contact {
 	fill: #909096;
-}
+}                    
 
-.header__contact:hover {
+.contact:hover {
 	fill: #08fdd8;
 }
 
@@ -113,7 +118,7 @@
 
 
 .skills__bar{
-	box-shadow: 3px 4px 16px 17px rgba(34, 60, 80, 0.36);
+	box-shadow: 3px 4px 16px 17px rgba(8, 253, 216, 0.36);
 }
 
 

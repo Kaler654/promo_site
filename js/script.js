@@ -2,7 +2,7 @@
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu) {
     const menuBody = document.querySelector('.menu__body');
-    const headerContacts = document.querySelector('.header__contacts');
+    const headerContacts = document.querySelector('.header__items');
 
     iconMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('_lock');
@@ -24,7 +24,9 @@ changeThemeButtons.forEach(button => {
 });
 
 function applyTheme(themeName) {
+    document.querySelector('[class="duck"]').setAttribute('src', `img/about/${themeName}.svg`);
     document.querySelector('[title="theme"]').setAttribute('href', `css/${themeName}.css`);
+
     changeThemeButtons.forEach(button => {
         button.style.display = 'block';
     });

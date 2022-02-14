@@ -19,11 +19,11 @@
 	color: #fd2155;
 }
 
-.header__contact {
+.header__item {
 	fill: #000;
 }
 
-.header__contact:hover {
+.contact:hover {
 	fill: #fd2155;
 }
 
@@ -34,12 +34,6 @@
 		background-color: #000000;
 	}
 
-    .menu__icon._active span,
-	.menu__icon._active::before,
-	.menu__icon._active::after {
-		background-color: #fff;
-	}
-
 	.menu__body {
 		background-color: rgba(0, 0, 0, 0.9);
 	}
@@ -47,6 +41,15 @@
     .menu__item a {
         color: #fff;
     }
+
+	.header__item {
+		fill: #fff;
+	}
+
+	.menu__body._active::before {
+		background-color: #ffffff;
+	}
+
 
 
 }
@@ -56,7 +59,7 @@
 
 .hello__image {
 	background-image: linear-gradient(to top, #fd2155 10%, #08fdd8 100%);
-	border: 10px solid #fff;
+	border: 10px solid #000;
 	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 
 }
@@ -122,7 +125,7 @@
 
 
 .skills__bar{
-	box-shadow: 3px 4px 16px 17px rgba(34, 60, 80, 0.36);
+	box-shadow: 3px 4px 16px 17px rgba(253, 33, 85, 0.36);
 }
 
 
@@ -138,7 +141,7 @@
 
 
 .bar .progress-line.frontend::after {
-	background: #fd2155;
+	background: #08fdd8;;
 }
 
 .bar .progress-line.backend::after {
@@ -150,7 +153,7 @@
 }
 
 .bar .progress-line.flask::after {
-	background: #08fdd8;
+	background: #62ce62;
 }
 
 .footer__item {
