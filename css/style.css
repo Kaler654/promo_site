@@ -95,6 +95,58 @@ body._lock {
 }
 
 
+._anim_show__title {
+	transform: translateX(-100%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+
+}
+
+._anim_show__title._active,
+._active ._anim_show__title {
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+._anim_show__subtitle {
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+
+}
+
+._anim_show__subtitle._active,
+._active ._anim_show__subtitle {
+	opacity: 1;
+	transform: translate(0px, 0px);
+	transition: all 0.8s ease 1s;
+}
+
+._anim_show__image {
+	transform: scale(0);
+	transition: all 0.8s ease 0s;
+
+}
+
+._anim_show__image._active,
+._active ._anim_show__image {
+	transform: scale(1);
+}
+
+._anim_show__skillbar {
+	transform: translateX(100%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+
+}
+
+._anim_show__skillbar._active,
+._active ._anim_show__skillbar {
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+
 .header {
 	font-family: 'Open Sans', sans-serif;
 	background-color: #181818;
@@ -118,6 +170,7 @@ body._lock {
 .header__menu {
 	flex: 1 1 auto;
 }
+
 .menu {
 	display: flex;
 	justify-content: center;
@@ -238,6 +291,31 @@ body._lock {
 		overflow: auto;
 	}
 
+	.menu__body._active::before {
+		content: "";
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		height: 90px;
+		background-color: #181818;
+	}
+
+	.menu__list li{
+		flex-wrap: wrap;
+		margin: 0px 0px 20px 0px;
+		z-index: 88;
+	}
+
+	.menu__list li:last-child{
+		margin: 0px;
+	}
+
+	.menu__item a {
+		font-size: 2rem;
+	}
+
+
 
 	.menu__body._active {
 		left: 0;
@@ -249,17 +327,19 @@ body._lock {
 		left: -100%;
 		width: 100%;
 		height: 100%;
-		padding: 500px 30px 30px 60px;
+		padding: 0px 30px 30px 60px;
 		transition: all 0.3s ease;
 		overflow: auto;
 		
 	}
 
 	.header__items._active {
+		top: 500px;
 		left: 0;
 	}
 
 	.header__items svg {
+		height: 50px;
 		transform: scale(1.3);
 		
 	}
@@ -277,18 +357,6 @@ body._lock {
 
 	.menu {
 		justify-content: right;
-	}
-
-	.menu__list li{
-		margin: 0px 0px 20px 0px;
-	}
-
-	.menu__list li:last-child{
-		margin: 0px;
-	}
-
-	.menu__item a {
-		font-size: 2rem;
 	}
 
 
