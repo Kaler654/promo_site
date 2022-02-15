@@ -92,7 +92,7 @@ if (animItems.length > 0) {
 				animItemPoint = window.innerHeight - window.innerHeight / animStart;
 			}
 
-			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+			if ((pageYOffset > animItemOffset - animItemPoint - 80) && pageYOffset < (animItemOffset + animItemHeight)) {
 				animItem.classList.add('_active');
 			} else {
 				if (!animItem.classList.contains('_anim-no-hide')) {
@@ -112,3 +112,4 @@ if (animItems.length > 0) {
 		animOnScroll();
 	}, 300);
 }
+

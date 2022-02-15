@@ -60,8 +60,7 @@ body._lock {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	min-height: 100%;	
-	background-color: #1d1d1d;
+	min-height: 100%;
 }
 
 .main {
@@ -394,6 +393,7 @@ body._lock {
 	padding-left: 3%;
 }
 .hello__content {
+	z-index: 2;
 	flex: 0 1 50%;
 	font-family: 'Coolvetica';
 	max-width: 700px;
@@ -401,6 +401,7 @@ body._lock {
 
 
 .hello__image {
+	z-index: 2;
 	flex: 0 1 50%;
 	padding-left: 10%;
 	justify-self: center;
@@ -547,6 +548,7 @@ body._lock {
 .secondary {
 	border-top: 1px solid rgb(53, 53, 53);
 	padding: 80px 0px 80px 0px;
+	z-index: -1;
 }
 
 .secondary__container {
@@ -688,7 +690,7 @@ body._lock {
 	content: '';
     display: block;
     width: 80%;
-	background: #08fdd8;
+	background: #62ce62;
     height: 100%;
     border-radius: 9px;
 }
