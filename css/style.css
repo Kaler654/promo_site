@@ -41,6 +41,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 @font-face {
+	font-display: swap;
 	font-family: 'Coolvetica';
 	src: url('../fonts/coolvetica rg.eot');
 	src: local('☺'), url('../fonts/coolvetica rg.woff') format('woff'), url('fonts/coolvetica rg.ttf') format('truetype'), url('fonts/coolvetica rg.svg') format('svg');
