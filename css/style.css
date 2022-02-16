@@ -1,21 +1,34 @@
-
 /*Обнуление*/
-*{
+* {
 	padding: 0;
 	margin: 0;
 	border: 0;
 }
-*,*:before,*:after{
+*,
+*:before,
+*:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
 
-nav,footer,header,aside{display: block;}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
 
-html,body{
+html,
+body {
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
@@ -25,37 +38,72 @@ html,body{
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
-input,button,textarea{font-family:inherit;}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
 
-* {-webkit-tap-highlight-color: rgba(0, 0, 0, 0)}
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 /*--------------------*/
+
+/* Подключение шрифтов */
 
 @font-face {
 	font-display: swap;
-	font-family: 'Coolvetica';
-	src: url('../fonts/coolvetica rg.eot');
-	src: local('☺'), url('../fonts/coolvetica rg.woff') format('woff'), url('fonts/coolvetica rg.ttf') format('truetype'), url('fonts/coolvetica rg.svg') format('svg');
+	font-family: "Coolvetica";
+	src: url("../fonts/coolvetica rg.eot");
+	src: local("☺"), url("../fonts/coolvetica rg.woff") format("woff"),
+		url("fonts/coolvetica rg.ttf") format("truetype"), url("fonts/coolvetica rg.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+/* ------------------------- */
 
+/* блокировка скролла при открытии меню-бургера */
 body._lock {
 	overflow: hidden;
 }
-
+/* --------------------------------------------- */
 
 .wrapper {
 	overflow: hidden;
@@ -74,32 +122,12 @@ body._lock {
 	padding: 0px 15px;
 }
 
-/* Шапка сайта + её адаптив */
-
-@media (max-width: 1470px) {
-	[class*="__container"] {
-		max-width: 970px;
-	}
-}
-
-@media (max-width: 991.98px) {
-	[class*="__container"] {
-		max-width: 750px;
-	}
-}
-
-@media (max-width: 767.98px) {
-	[class*="__container"] {
-		max-width: none;
-	}
-}
-
+/* Классы для активации анимации при прокрутке -----------------------------------------------------*/
 
 ._anim_show__title {
 	transform: translateX(-100%);
 	opacity: 0;
 	transition: all 0.8s ease 0s;
-
 }
 
 ._anim_show__title._active,
@@ -112,7 +140,6 @@ body._lock {
 	transform: translate(0px, 120%);
 	opacity: 0;
 	transition: all 0.3s ease 0s;
-
 }
 
 ._anim_show__subtitle._active,
@@ -125,7 +152,6 @@ body._lock {
 ._anim_show__image {
 	transform: scale(0);
 	transition: all 0.8s ease 0s;
-
 }
 
 ._anim_show__image._active,
@@ -137,7 +163,6 @@ body._lock {
 	transform: translateX(100%);
 	opacity: 0;
 	transition: all 0.8s ease 0s;
-
 }
 
 ._anim_show__skillbar._active,
@@ -146,25 +171,48 @@ body._lock {
 	transform: translateX(0%);
 }
 
+/* ---------------------------------------------------------------------------- */
+
+/* PC */
+@media (max-width: 1470px) {
+	[class*="__container"] {
+		max-width: 970px;
+	}
+}
+
+/* TABLET */
+@media (max-width: 991.98px) {
+	[class*="__container"] {
+		max-width: 750px;
+	}
+}
+
+/* MOBILE */
+@media (max-width: 767.98px) {
+	[class*="__container"] {
+		max-width: none;
+	}
+}
+
+/* Шапка сайта + её адаптив ----------------------------------------------------------------------------*/
 
 .header {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	background-color: #181818;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 50;
+	z-index: 5;
 }
 .header__container {
 	display: flex;
 	min-height: 110px;
 	align-items: center;
-
 }
 .header__logo {
 	margin-left: 40px;
-	z-index: 100;
+	z-index: 10;
 }
 
 .header__menu {
@@ -185,21 +233,18 @@ body._lock {
 	display: flex;
 	justify-content: space-between;
 	gap: 70px;
-
 }
 
 .menu__item {
 	color: #fd2155;
 }
 
-
 .menu__item a {
 	font-size: 1.6rem;
 	color: #909096;
-    line-height: 5rem;
+	line-height: 5rem;
 	transition: color 0.3s, background-color 0.3s;
 }
-
 
 .menu__item a:hover {
 	color: #08fdd8;
@@ -214,24 +259,23 @@ body._lock {
 		min-height: 90px;
 	}
 
-	.header__items svg{
+	.header__items svg {
 		transform: scale(1.2);
-		
 	}
 
-	.header__items svg{
+	.header__items svg {
 		margin: 0px 5px;
 	}
 
-	.header__logo, .header__items {
+	.header__logo,
+	.header__items {
 		margin: 0;
 	}
-
 }
 
 @media (max-width: 767.98px) {
 	.menu__icon {
-		z-index: 5;
+		z-index: 10;
 		display: block;
 		position: relative;
 		width: 30px;
@@ -301,21 +345,19 @@ body._lock {
 		background-color: #181818;
 	}
 
-	.menu__list li{
+	.menu__list li {
 		flex-wrap: wrap;
 		margin: 0px 0px 20px 0px;
-		z-index: 88;
+		z-index: 10;
 	}
 
-	.menu__list li:last-child{
+	.menu__list li:last-child {
 		margin: 0px;
 	}
 
 	.menu__item a {
 		font-size: 2rem;
 	}
-
-
 
 	.menu__body._active {
 		left: 0;
@@ -330,7 +372,6 @@ body._lock {
 		padding: 0px 30px 30px 60px;
 		transition: all 0.3s ease;
 		overflow: auto;
-		
 	}
 
 	.header__items._active {
@@ -341,12 +382,10 @@ body._lock {
 	.header__items svg {
 		height: 50px;
 		transform: scale(1.3);
-		
 	}
 
-	.header__items:last-child{
+	.header__items:last-child {
 		margin: 0px;
-		
 	}
 
 	.menu__list {
@@ -358,10 +397,7 @@ body._lock {
 	.menu {
 		justify-content: right;
 	}
-
-
 }
-
 
 .header__items {
 	margin-right: 40px;
@@ -372,17 +408,16 @@ body._lock {
 .header__item {
 	fill: #909096;
 	transition: fill 0.3s;
-
 }
-
 
 .contact:hover {
 	fill: #08fdd8;
 	transition: fill 0.3s;
-
 }
 
-/*Блок-приветствие*/
+/* ---------------------------------------------------------------------------- */
+
+/*Блок-приветствие ------------------------------------------------------------ */
 
 .hello {
 	padding: 250px 0px 150px 0px;
@@ -394,15 +429,12 @@ body._lock {
 	padding-left: 3%;
 }
 .hello__content {
-	z-index: 2;
 	flex: 0 1 50%;
-	font-family: 'Coolvetica';
+	font-family: "Coolvetica";
 	max-width: 700px;
 }
 
-
 .hello__image {
-	z-index: 2;
 	flex: 0 1 50%;
 	padding-left: 10%;
 	justify-self: center;
@@ -411,7 +443,6 @@ body._lock {
 	border: 10px solid #fff;
 	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 	animation: photo-animate 5s infinite alternate;
-
 }
 
 .hello__image img {
@@ -419,50 +450,48 @@ body._lock {
 }
 
 .block-text__title {
-	font-family: 'Coolvetica';
+	font-family: "Coolvetica";
 	color: #fff;
-    font-size: 7rem;
-    line-height: 8.7rem;
+	font-size: 7rem;
+	line-height: 8.7rem;
 	letter-spacing: 3px;
 }
 
 .logo_letter {
-	font-family: 'Coolvetica';
+	font-family: "Coolvetica";
 	font-weight: 400;
-    font-size: 7.2rem;
-    line-height: 8.7rem;
+	font-size: 7.2rem;
+	line-height: 8.7rem;
 	color: #fd2155;
 	text-shadow: -6px 3px 0px #08fdd8;
 	padding-left: 8px;
-
 }
 
 .block-text__text {
 	font-size: 1.6rem;
-    letter-spacing: 4px;
-    margin-top: 3rem;
-    display: block;
-    color: #8d8d8d;
+	letter-spacing: 4px;
+	margin-top: 3rem;
+	display: block;
+	color: #8d8d8d;
 }
 
 @keyframes photo-animate {
 	0% {
 		border-radius: 62% 38% 72% 28% / 67% 32% 68% 33%;
-	  }
-	
+	}
+
 	40% {
 		border-radius: 37% 63% 53% 47% / 67% 32% 68% 33%;
-	  }
-	
+	}
+
 	60% {
 		border-radius: 23% 77% 39% 61% / 78% 54% 46% 22%;
-	  }
-	
+	}
+
 	100% {
 		border-radius: 18% 82% 24% 76% / 43% 54% 46% 57%;
-	  }
+	}
 }
-
 
 @media (max-width: 1470px) {
 	.hello {
@@ -486,16 +515,13 @@ body._lock {
 
 	.hello__image {
 		padding-left: 40px;
-	
 	}
 
 	.block-text__text {
 		font-size: 1.4rem;
 		letter-spacing: 3px;
 	}
-
 }
-
 
 @media (max-width: 991.98px) {
 	.hello {
@@ -504,7 +530,7 @@ body._lock {
 
 	.block-text__title {
 		font-size: 3rem;
-		line-height: 4.0rem;
+		line-height: 4rem;
 	}
 
 	.logo_letter {
@@ -519,11 +545,8 @@ body._lock {
 
 	.hello__image {
 		padding-left: 40px;
-	
 	}
 }
-
- 
 
 @media (max-width: 767.98px) {
 	.hello__content {
@@ -540,16 +563,16 @@ body._lock {
 		flex: 1 1 100%;
 		text-align: center;
 		margin-top: 10%;
-	
 	}
 }
 
-/* Обо мне */
+/* ---------------------------------------------------------------------------- */
+
+/* Блок обо мне --------------------------------------------------------------- */
 
 .secondary {
 	border-top: 1px solid rgb(53, 53, 53);
 	padding: 80px 0px 80px 0px;
-	z-index: -1;
 }
 
 .secondary__container {
@@ -561,7 +584,7 @@ body._lock {
 
 .secondary__content {
 	flex: 0 1 50%;
-	font-family: 'Coolvetica';
+	font-family: "Coolvetica";
 	max-width: 700px;
 	padding-right: 5%;
 }
@@ -569,15 +592,15 @@ body._lock {
 .secondary__title {
 	color: #08fdd8;
 	margin-bottom: 40px;
-    font-size: 7.3rem;
+	font-size: 7.3rem;
 	line-height: 6.7rem;
 }
 .secondary__text {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	color: #fff;
-    font-size: 1.6rem;
+	font-size: 1.6rem;
 	line-height: 1.5;
-    letter-spacing: 2px;
+	letter-spacing: 2px;
 }
 
 .link {
@@ -597,49 +620,47 @@ body._lock {
 	width: 100%;
 }
 
-
 /* skills bar */
 
-::selection{
+::selection {
 	color: #fff;
 	background: #6665ee;
 }
 
-
-.skills__bar{
+.skills__bar {
 	padding: 25px 30px;
 	width: 100%;
 	box-shadow: 3px 4px 16px 17px rgba(34, 60, 80, 0.36);
 	border-radius: 10px;
 }
 
-.skills__bar .bar{
+.skills__bar .bar {
 	margin: 20px 0;
 }
 
-.skills__bar .bar:first-child{
+.skills__bar .bar:first-child {
 	margin-top: 0px;
 }
 
-.skills__bar .bar .info{
+.skills__bar .bar .info {
 	margin-bottom: 5px;
 }
 
-.skills__bar .bar .info span{
+.skills__bar .bar .info span {
 	color: #fff;
 	font-size: 18px;
 	animation: showText 0.5s 1s linear forwards;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	letter-spacing: 3px;
 }
 
 @keyframes showText {
 	100% {
-	  opacity: 1;
+		opacity: 1;
 	}
 }
 
-.skills__bar .bar .progress-line{
+.skills__bar .bar .progress-line {
 	height: 10px;
 	width: 100%;
 	background: #313131;
@@ -647,62 +668,57 @@ body._lock {
 	transform: scaleX(0);
 	transform-origin: left;
 	border-radius: 10px;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
-				0 1px rgba(255,255,255,0.8);
-	animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.8);
+	animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
 @keyframes animate {
-	100%{
-	  transform: scaleX(1);
+	100% {
+		transform: scaleX(1);
 	}
 }
 
-
-
 .bar .progress-line.frontend::after {
-	content: '';
-    display: block;
-    width: 70%;
+	content: "";
+	display: block;
+	width: 70%;
 	background: #08fdd8;
-    height: 100%;
-    border-radius: 9px;
+	height: 100%;
+	border-radius: 9px;
 }
 
 .bar .progress-line.backend::after {
-	content: '';
-    display: block;
-    width: 60%;
+	content: "";
+	display: block;
+	width: 60%;
 	background: #ff2253;
-    height: 100%;
-    border-radius: 9px;
+	height: 100%;
+	border-radius: 9px;
 }
 
 .bar .progress-line.python::after {
-	content: '';
-    display: block;
-    width: 85%;
+	content: "";
+	display: block;
+	width: 85%;
 	background: #d26cd5;
-    height: 100%;
-    border-radius: 9px;
+	height: 100%;
+	border-radius: 9px;
 }
 
 .bar .progress-line.flask::after {
-	content: '';
-    display: block;
-    width: 80%;
+	content: "";
+	display: block;
+	width: 80%;
 	background: #62ce62;
-    height: 100%;
-    border-radius: 9px;
+	height: 100%;
+	border-radius: 9px;
 }
-
 
 @keyframes showText2 {
-	100%{
-	  opacity: 1;
+	100% {
+		opacity: 1;
 	}
 }
-
 
 @media (max-width: 1470px) {
 	.secondary {
@@ -728,9 +744,7 @@ body._lock {
 	.secondary__other {
 		padding-left: 20px;
 	}
-
 }
-
 
 @media (max-width: 991.98px) {
 	.secondary {
@@ -749,7 +763,6 @@ body._lock {
 		line-height: 1.3;
 		letter-spacing: 0px;
 	}
-
 }
 
 @media (max-width: 767.98px) {
@@ -786,10 +799,11 @@ body._lock {
 		margin-top: 5%;
 		padding: 0px 10px;
 	}
-
 }
 
+/* ---------------------------------------------------------------------------- */
 
+/* Подвал сайта */
 .footer {
 	margin-top: 8%;
 	padding: 20px 0px;
@@ -806,3 +820,5 @@ body._lock {
 	font-size: 16px;
 	letter-spacing: 3px;
 }
+
+/* ---------------------------------------------------------------------------- */

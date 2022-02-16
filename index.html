@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,10 @@
     <title>E | Frontend Developer</title>
     <link rel="icon" type="image/x-icon" href="img/icon.ico">
 </head>
+
 <body>
-    <div class="wrapper">   
+    <div class="wrapper">
+        <!-- /header -->
         <header class="header">
             <div class="header__container">
                 <a href="" class="header__logo">
@@ -69,7 +72,10 @@
                 </div>
             </div>
         </header>
+        <!-- /header -->
+
         <main class="main">
+            <!-- /hello -->
             <section class="hello">
                 <div class="hello__container">
                     <div class="hello__content">
@@ -79,10 +85,13 @@
                         </div>
                     </div>
                     <div class="hello__image _anim-items _anim_show__image _anim-no-hide">
-                        <img src="img/hello/photo.webp" width="500" height="500" alt="ФОТО">
+                        <img src="img/hello/photo.webp" alt="ФОТО">
                     </div>
                 </div>
             </section>
+            <!-- /hello -->
+            
+            <!-- /about -->
             <section class="about secondary">
                 <div class="about__container secondary__container">
                     <div class="about__content secondary__content _anim-items _anim_show__title _anim-no-hide">
@@ -91,17 +100,19 @@
                                 <h2>Обо мне</h2>
                             </div>   
                             <div class="about__text secondary__text">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas corrupti ipsum dolor obcaecati, harum voluptatem, sit consequatur necessitatibus quam perspiciatis officiis.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, incidunt dignissimos tenetur ratione ducimus excepturi fugiat saepe expedita provident accusantium! Quos unde pariatur distinctio nemo amet vitae magni eius aliquid fugiat animi?</p>
+                                <p>Меня зовут Михайлов Егор Вячеславович, мне 17 лет и я из города Набережные Челны. Учусь в ОШ "Университетская" и увлекаюсь программированием.</p>
+                                <p>Я закончил Лицей Академии Яндекса, попав в <a class="link" href="https://lyceum.yandex.ru/certificate/check?certNumber=210234236&lastName=Михайлов" target="_blank">топ-100</a> лучших выпускников проекта 2021. Я не просто знаком с методикой обучения в Яндексе, но также могу с уверенностью сказать, что такая методика обучения мне полностью подходит, поэтому я считаю, что именно я должен попасть в проект.</p>
                             </div>
                         </div>
                     </div>
                     <div class="about__other secondary__other _anim-items _anim_show__image _anim-no-hide">
-                        <img src="img/about/dark.svg" alt="ФОТО" class="duck">
+                        <img src="img/about/dark_duck.svg" alt="КАРТИНКА" class="duck">
                     </div>
                 </div>
             </section>
-
+            <!-- /about -->
+            
+            <!-- /skills -->
             <section class="skills secondary">
                 <div class="skills__container secondary__container">
                     <div class="skills__content secondary__content _anim-items _anim_show__title _anim-no-hide">
@@ -110,8 +121,8 @@
                                 <h2>Мои навыки</h2>
                             </div>   
                             <div class="skills__text secondary__text">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nisi cupiditate dolores! Et, inventore? Tenetur hic minima modi qui placeat quam libero, velit consequatur sit dolores vitae alias accusamus adipisci porro reiciendis itaque corrupti unde error, animi iure delectus illum architecto? Quae at culpa molestiae? </p>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, neque accusantium laboriosam, non fugiat voluptatem nobis nemo cupiditate nihil autem ex provident obcaecati dolore eos deleniti consequuntur porro eum placeat? Ad, sunt!</p>
+                                <p>С тех пор как я начал свой путь в программировании почти 2 года назад, я успел изучить несколько языков и множество библиотек к ним. Один из моих <a class="link" href="http://flask-quizz-project.herokuapp.com/" target="_blank">проектов</a> - это сайт, backend которого написан на Flask, также используются такие технологии как: SQLite, REST-API.</p>
+                                <p>По окончании Лицея Академии Яндекса я углубился во frontend разработку, начал изучать JavaScript, иногда выполняя заказы на фрилансе. Знания, которые я получил после Лицея, во многом помогли мне в создании этого сайта.</p>
                             </div>
                         </div>
                     </div>
@@ -119,7 +130,7 @@
                         <div class="skills__bar">
                             <div class="bar">
                                 <div class="info">
-                                    <span>Front-end</span>
+                                    <span>Frontend</span>
                                 </div>
                                 <div class="progress-line frontend">
                                     <span></span>
@@ -127,33 +138,36 @@
                             </div>
                             <div class="bar">
                                 <div class="info">
-                                <span>Back-end</span>
+                                    <span>Backend</span>
                                 </div>
                                 <div class="progress-line backend">
-                                <span></span>
+                                    <span></span>
                                 </div>
                             </div>
                             <div class="bar">
                                 <div class="info">
-                                <span>Python</span>
+                                    <span>Python</span>
                                 </div>
                                 <div class="progress-line python">
-                                <span></span>
+                                    <span></span>
                                 </div>
                             </div>
                             <div class="bar">
                                 <div class="info">
-                                <span>Flask</span>
+                                    <span>Flask</span>
                                 </div>
                                 <div class="progress-line flask">
-                                <span></span>
+                                    <span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section> 
+            <!-- /skills -->
         </main>
+
+        <!-- /footer -->
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__items">
@@ -161,6 +175,7 @@
                 </div>
             </div>
         </footer>
+        <!-- /footer -->
     </div>
     <script src="js/script.js"></script>
 </body>

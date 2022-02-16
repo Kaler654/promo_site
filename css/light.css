@@ -1,15 +1,13 @@
-
 .wrapper {
 	background-color: #ffffff;
 }
 
-
+/* Шапка сайта --------------------------------*/
 
 .header {
 	background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 
 .menu__item a {
 	color: #000;
@@ -38,9 +36,9 @@
 		background-color: rgba(0, 0, 0, 0.9);
 	}
 
-    .menu__item a {
-        color: #fff;
-    }
+	.menu__item a {
+		color: #fff;
+	}
 
 	.header__item {
 		fill: #fff;
@@ -49,21 +47,17 @@
 	.menu__body._active::before {
 		background-color: #ffffff;
 	}
-
-
-
 }
 
-/*Блок-приветствие*/
+/* --------------------------------------------------------- */
 
+/*Блок-приветствие*/
 
 .hello__image {
 	background-image: linear-gradient(to top, #fd2155 10%, #08fdd8 100%);
 	border: 10px solid #000;
 	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-
 }
-
 
 .block-text__title {
 	color: #000000;
@@ -72,21 +66,17 @@
 .logo_letter {
 	color: #fd2155;
 	text-shadow: -6px 3px 0px #08fdd8;
-
 }
 
 .block-text__text {
-    color: #8d8d8d;
+	color: #8d8d8d;
 }
-
 
 @media (max-width: 1470px) {
 	.logo_letter {
 		text-shadow: -4px 2px 0px #08fdd8;
 	}
-
 }
-
 
 @media (max-width: 991.98px) {
 	.logo_letter {
@@ -94,14 +84,13 @@
 	}
 }
 
-
+/* -------------------------------------------------------- */
 
 /* Обо мне */
 
 .secondary {
 	border-top: 1px solid rgb(53, 53, 53);
 }
-
 
 .secondary__title {
 	color: #fd2155;
@@ -115,33 +104,28 @@
 	color: #fd2155;
 }
 
-
 /* skills bar */
 
-::selection{
+::selection {
 	color: #fff;
 	background: #6665ee;
 }
 
-
-.skills__bar{
+.skills__bar {
 	box-shadow: 3px 4px 16px 17px rgba(253, 33, 85, 0.36);
 }
 
-
-.skills__bar .bar .info span{
+.skills__bar .bar .info span {
 	color: #000;
 }
 
-.skills__bar .bar .progress-line{
+.skills__bar .bar .progress-line {
 	background: #313131;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
-				0 1px rgba(0,0,0,0.8);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.8);
 }
 
-
 .bar .progress-line.frontend::after {
-	background: #08fdd8;;
+	background: #08fdd8;
 }
 
 .bar .progress-line.backend::after {
@@ -159,7 +143,6 @@
 .footer__item {
 	color: #c1403d;
 }
-
 
 [data-theme="dark"] {
 	display: none;

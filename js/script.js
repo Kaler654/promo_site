@@ -24,7 +24,7 @@ changeThemeButtons.forEach(button => {
 });
 
 function applyTheme(themeName) {
-    document.querySelector('[class="duck"]').setAttribute('src', `img/about/${themeName}.svg`);
+    document.querySelector('[class="duck"]').setAttribute('src', `img/about/${themeName}_duck.svg`);
     document.querySelector('[title="theme"]').setAttribute('href', `css/${themeName}.css`);
 
     changeThemeButtons.forEach(button => {
