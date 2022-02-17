@@ -395,7 +395,7 @@ body._lock {
 	}
 
 	.menu {
-		justify-content: right;
+		justify-content: flex-end;
 	}
 }
 
